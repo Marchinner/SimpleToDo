@@ -14,11 +14,12 @@ public class ToDoTask {
 
     private String description;
 
-    private Boolean isCompleted;
+    private Boolean completed = false;
+
+    public ToDoTask() { }
 
     public ToDoTask(String description) {
         this.description = description;
-        this.isCompleted = false;
     }
 
     public Long getId() {
@@ -34,10 +35,10 @@ public class ToDoTask {
     }
 
     public Boolean getCompleted() {
-        return isCompleted;
+        return completed;
     }
 
     public void setCompleted(Boolean completed) {
-        isCompleted = completed;
+        this.completed = completed;
     }
 }
